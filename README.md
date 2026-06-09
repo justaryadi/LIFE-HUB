@@ -1,3 +1,4 @@
+<img width="152" height="48" alt="image" src="https://github.com/user-attachments/assets/89eb132f-8c65-4a60-a8d9-fa13f1f78b79" />
 
 # LIFE-HUB
 
