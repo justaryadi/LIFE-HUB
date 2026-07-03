@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievement | LIFEHUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+
+    <nav class="feature-navbar">
+        <div class="nav-pill">
+            <a href="dashboard.html"><i data-lucide="layout-dashboard"></i><span>Dashboard</span></a>
+            <a href="quest.html"><i data-lucide="check-square"></i><span>Quest</span></a>
+            <a href="habit.html"><i data-lucide="repeat"></i><span>Habit</span></a>
+            <a href="pomodoro.html"><i data-lucide="timer"></i><span>Pomodoro</span></a>
+            <a href="achievement.html" class="active"><i data-lucide="award"></i><span>Achievement</span></a>
+            <a href="eco.html"><i data-lucide="leaf"></i><span>Eco</span></a>
+        </div>
+    </nav>
+
+    </nav>
+
+    <main class="dashboard-main">
+
+        <div class="max-w-5xl mx-auto w-full px-4 pt-10 md:pt-16 pb-4">
+
+            <header class="page-header mb-12">
+                <p class="text-xl eyebrow">Feature</p>
+                <h1 class="text-4xl md:text-5xl font-family:'Inter',sans-serif font-bold text-[#0f172a] tracking-tight leading-tight mb-4">Achievement</h1>
+                <p>See your XP, level, streak, and unlocked badges.</p>
+            </header>
+
+            <div class="mt-8 mb-10 w-full">
+                <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+
+                    <div class="stat-card flex justify-between items-center p-5 w-full">
+                        <div>
+                            <p class="text-sm text-slate-400 font-medium">Level</p>
+                            <h3 id="levelValue" class="text-2xl font-bold text-slate-800 mt-1">1</h3>
+                        </div>
+                        <i data-lucide="sparkles" class="w-6 h-6 text-amber-500"></i>
+                    </div>
+
+                    <div class="stat-card flex justify-between items-center p-5 w-full">
+                        <div>
+                            <p class="text-sm text-slate-400 font-medium">Total XP</p>
+                            <h3 id="xpValue" class="text-2xl font-bold text-slate-800 mt-1">0</h3>
+                        </div>
+                        <i data-lucide="zap" class="w-6 h-6 text-yellow-500"></i>
+                    </div>
+
+                    <div class="stat-card flex justify-between items-center p-5 w-full">
+                        <div>
+                            <p class="text-sm text-slate-400 font-medium">Habit Streak</p>
+                            <h3 id="streakValue" class="text-2xl font-bold text-slate-800 mt-1">0</h3>
+                        </div>
+                        <i data-lucide="flame" class="w-6 h-6 text-orange-500"></i>
+                    </div>
+
+                    <div class="stat-card flex justify-between items-center p-5 w-full">
+                        <div>
+                            <p class="text-sm text-slate-400 font-medium">Eco Points</p>
+                            <h3 id="ecoValue" class="text-2xl font-bold text-slate-800 mt-1">0</h3>
+                        </div>
+                        <i data-lucide="leaf" class="w-6 h-6 text-emerald-500"></i>
+                    </div>
+
+                </section>
+            </div>
+
+            <section class="panel mb-12">
+                
+                <div class="panel-header mb-12">
+                    <div>
+                        <p class="text-xl eyebrow">Badges</p>
+                        <h3 class="text-xl font-bold text-slate-800">Your Achievements</h3>
+                    </div>
+                </div>
+
+                <div class="mb-8 mb-10 w-full">
+
+                <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 Y" id="badgeList"></section>
+                </div>
+                
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="../js/lifehub-core.js"></script>
+    <script src="../js/achievement-page.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
