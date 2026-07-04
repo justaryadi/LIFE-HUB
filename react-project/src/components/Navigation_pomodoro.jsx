@@ -46,6 +46,7 @@
 // export default Navigation;
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,12 +70,12 @@ const Navigation = () => {
                 
                 {!isMobile && (
                     <div className="nav-pill">
-                        <a href="dashboard.html"><span>Dashboard</span></a>
-                        <a href="quest.html"><span>Quest</span></a>
-                        <a href="habit.html"><span>Habit</span></a>
-                        <a href="pomodoro.html" className="active"><span>Pomodoro</span></a>
-                        <a href="achievement.html"><span>Achievement</span></a>
-                        <a href="eco.html"><span>Eco</span></a>
+                        <Link to="/"><span>Dashboard</span></Link>
+                        <Link to="/quest"><span>Quest</span></Link>
+                        <Link to="/habit"><span>Habit</span></Link>
+                        <Link to="/pomodoro" className="active"><span>Pomodoro</span></Link>
+                        <Link to="/achievement"><span>Achievement</span></Link>
+                        <Link to="/eco"><span>Eco</span></Link>
                     </div>
                 )}
 
@@ -89,12 +90,12 @@ const Navigation = () => {
 
             {isMobile && isMenuOpen && (
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', padding: '16px', background: 'white', borderBottom: '1px solid #99F6E4' }}>
-                    <a href="dashboard.html" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Dashboard</a>
-                    <a href="quest.html" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Quest</a>
-                    <a href="habit.html" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Habit</a>
-                    <a href="pomodoro.html" style={{ textDecoration: 'none', color: '#14B8A6', fontWeight: '700' }}>Pomodoro</a>
-                    <a href="achievement.html" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Achievement</a>
-                    <a href="eco.html" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Eco</a>
+                    <Link to="/dashboard" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Dashboard</Link>
+                    <Link to="/quest" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Quest</Link>
+                    <Link to="/habit" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Habit</Link>
+                    <Link to="/pomodoro" style={{ textDecoration: 'none', color: '#14B8A6', fontWeight: '700' }}>Pomodoro</Link>
+                    <Link to="/achievement" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Achievement</Link>
+                    <Link to="/eco" style={{ textDecoration: 'none', color: '#475569', fontWeight: '700' }}>Eco</Link>
                 </div>
             )}
         </>
