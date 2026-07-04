@@ -1,0 +1,4 @@
+/* Habit page mostly uses shared /public/css/pages.css in the main project.
+   This file is intentionally only a note, not a replacement.
+   Habit-specific selectors currently used: .habit-card, .habit-card.completed, .habit-progress-box.
+   Ask core owner before editing shared pages.css. */
