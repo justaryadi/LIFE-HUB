@@ -1,0 +1,63 @@
+.legal-container{
+max-width:1100px;
+margin:0 auto;
+padding:180px 40px 120px;
+}
+
+.legal-title{
+font-size:72px;
+font-weight:700;
+color:#60A5FA;
+margin-bottom:40px;
+}
+
+.legal-divider{
+height:1px;
+background:#e5e7eb;
+margin-bottom:60px;
+}
+
+.legal-updated{
+font-size:18px;
+color:#6b7280;
+margin-bottom:40px;
+}
+
+.legal-content{
+max-width:1000px;
+}
+
+.legal-content h2{
+font-size:48px;
+font-weight:700;
+margin-top:60px;
+margin-bottom:20px;
+color:#111827;
+}
+
+.legal-content h3{
+font-size:32px;
+font-weight:700;
+margin-top:40px;
+margin-bottom:15px;
+color:#111827;
+}
+
+.legal-content p{
+font-size:22px;
+line-height:1.9;
+color:#4b5563;
+margin-bottom:24px;
+}
+
+.legal-content ul{
+padding-left:40px;
+margin-bottom:30px;
+}
+
+.legal-content li{
+font-size:22px;
+line-height:1.8;
+color:#4b5563;
+margin-bottom:12px;
+}
