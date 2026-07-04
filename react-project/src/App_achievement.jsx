@@ -40,12 +40,10 @@ const App = () => {
                 <div className="max-w-5xl mx-auto w-full">
                     <Header />
                     
-                    {/* Stat Cards */}
                     <div className="mt-8 mb-10 w-full">
                         <CardGrid features={features} />
                     </div>
 
-                    {/* Badges */}
                     <section className="panel mb-12">
                         <div className="panel-header mb-6">
                             <div>
