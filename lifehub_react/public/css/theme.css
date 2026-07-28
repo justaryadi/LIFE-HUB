@@ -1,0 +1,355 @@
+/* ===============================
+   LIFEHUB DARK MODE PATCH
+   Fixes text/card colors + crescent moon icon.
+   Trigger: click the sun in dashboard overview.
+================================ */
+
+html.lifehub-dark,
+body.lifehub-dark{
+    color-scheme:dark;
+    background:#020617 !important;
+    color:#F8FAFC !important;
+
+    --bg:#020617;
+    --surface:#0F172A;
+    --surface-soft:#132E2C;
+    --text:#F8FAFC;
+    --muted:#CBD5E1;
+    --muted-light:#94A3B8;
+    --border:rgba(45,212,191,.28);
+    --mint:#134E4A;
+    --mint-strong:#0F766E;
+    --teal:#2DD4BF;
+    --cyan:#67E8F9;
+    --navy:#F8FAFC;
+    --soft:#111827;
+    --green:#2DD4BF;
+    --sage:#134E4A;
+    --blue:#67E8F9;
+    --yellow:#FDE68A;
+    --shadow:0 24px 70px rgba(0,0,0,.38);
+}
+
+body.lifehub-dark{
+    background:
+        radial-gradient(circle at top right, rgba(20,184,166,.22), transparent 36%),
+        radial-gradient(circle at top left, rgba(103,232,249,.12), transparent 34%),
+        #020617 !important;
+}
+
+/* Global text */
+body.lifehub-dark,
+body.lifehub-dark main,
+body.lifehub-dark section,
+body.lifehub-dark article,
+body.lifehub-dark div{
+    color:#F8FAFC;
+}
+
+body.lifehub-dark h1,
+body.lifehub-dark h2,
+body.lifehub-dark h3,
+body.lifehub-dark h4,
+body.lifehub-dark h5,
+body.lifehub-dark h6,
+body.lifehub-dark .logo,
+body.lifehub-dark .onboard-brand,
+body.lifehub-dark .brand-text h1,
+body.lifehub-dark .feature-hero h1,
+body.lifehub-dark .feature-hero-copy h1,
+body.lifehub-dark .hero-content h1,
+body.lifehub-dark .things-copy h1,
+body.lifehub-dark .showcase-header h1,
+body.lifehub-dark .profile-split-info h3,
+body.lifehub-dark .profile-main-card h1{
+    color:#F8FAFC !important;
+}
+
+body.lifehub-dark p,
+body.lifehub-dark small,
+body.lifehub-dark label,
+body.lifehub-dark span,
+body.lifehub-dark .muted,
+body.lifehub-dark .panel-label,
+body.lifehub-dark .eyebrow,
+body.lifehub-dark .feature-hero p,
+body.lifehub-dark .feature-hero-copy p,
+body.lifehub-dark .hero-content p,
+body.lifehub-dark .shortcut-card p,
+body.lifehub-dark .stat-card p,
+body.lifehub-dark .feature-panel p,
+body.lifehub-dark .feature-panel label,
+body.lifehub-dark .float-card p,
+body.lifehub-dark .overview-card p,
+body.lifehub-dark .habit-item p,
+body.lifehub-dark .eco-item p,
+body.lifehub-dark .pulse-box p,
+body.lifehub-dark .profile-split-info p,
+body.lifehub-dark .legal-container p,
+body.lifehub-dark .question-card p,
+body.lifehub-dark .result-card p,
+body.lifehub-dark .quote-card p,
+body.lifehub-dark .builder-note{
+    color:#CBD5E1 !important;
+}
+
+body.lifehub-dark .eyebrow,
+body.lifehub-dark .panel-label,
+body.lifehub-dark .tag,
+body.lifehub-dark .quote-label{
+    color:#67E8F9 !important;
+}
+
+/* Page / navbar surfaces */
+body.lifehub-dark .feature-navbar,
+body.lifehub-dark .dashboard-feature-navbar,
+body.lifehub-dark .navbar,
+body.lifehub-dark .topbar,
+body.lifehub-dark .onboard-nav{
+    background:rgba(2,6,23,.82) !important;
+    border-color:rgba(45,212,191,.24) !important;
+    backdrop-filter:blur(18px);
+}
+
+body.lifehub-dark .nav-pill,
+body.lifehub-dark .dashboard-feature-navbar .nav-pill,
+body.lifehub-dark .nav-links,
+body.lifehub-dark .onboard-links a,
+body.lifehub-dark .search-box,
+body.lifehub-dark .circle-btn,
+body.lifehub-dark .dashboard-profile-trigger{
+    background:rgba(15,23,42,.86) !important;
+    border-color:rgba(45,212,191,.28) !important;
+    color:#E0F2FE !important;
+}
+
+body.lifehub-dark .nav-pill a,
+body.lifehub-dark .dashboard-feature-navbar .nav-pill a,
+body.lifehub-dark .nav-links a,
+body.lifehub-dark .onboard-links a{
+    color:#CBD5E1 !important;
+}
+
+body.lifehub-dark .nav-pill a.active,
+body.lifehub-dark .dashboard-feature-navbar .nav-pill a.active,
+body.lifehub-dark .nav-pill a:hover,
+body.lifehub-dark .dashboard-feature-navbar .nav-pill a:hover,
+body.lifehub-dark .onboard-links .nav-primary,
+body.lifehub-dark .onboard-links a:hover{
+    background:#CCFBF1 !important;
+    color:#020617 !important;
+}
+
+/* Main cards / panels */
+body.lifehub-dark .hero-card,
+body.lifehub-dark .panel,
+body.lifehub-dark .stat-card,
+body.lifehub-dark .shortcut-card,
+body.lifehub-dark .overview-card,
+body.lifehub-dark .feature-panel,
+body.lifehub-dark .visual-stage,
+body.lifehub-dark .float-card,
+body.lifehub-dark .feature-stat-card,
+body.lifehub-dark .question-card,
+body.lifehub-dark .result-card,
+body.lifehub-dark .quote-card,
+body.lifehub-dark .profile-main-card,
+body.lifehub-dark .profile-visual-card,
+body.lifehub-dark .profile-story-card,
+body.lifehub-dark .profile-progress-panel,
+body.lifehub-dark .identity-item,
+body.lifehub-dark .notification-box,
+body.lifehub-dark .modal-card,
+body.lifehub-dark .modal-box,
+body.lifehub-dark .reset-modal-box,
+body.lifehub-dark .character-startup-box,
+body.lifehub-dark .profile-split-panel,
+body.lifehub-dark .legal-container,
+body.lifehub-dark .pomodoro-settings-card,
+body.lifehub-dark .guide-card,
+body.lifehub-dark .shop-card,
+body.lifehub-dark .inventory-card,
+body.lifehub-dark .eco-card,
+body.lifehub-dark .habit-card,
+body.lifehub-dark .quest-card,
+body.lifehub-dark .empty-feature,
+body.lifehub-dark .answer-btn{
+    background:rgba(15,23,42,.92) !important;
+    border-color:rgba(45,212,191,.30) !important;
+    color:#F8FAFC !important;
+    box-shadow:0 24px 70px rgba(0,0,0,.34) !important;
+}
+
+body.lifehub-dark .hero-card,
+body.lifehub-dark .visual-stage,
+body.lifehub-dark .profile-visual-card,
+body.lifehub-dark .lifehub-avatar,
+body.lifehub-dark .character-preview-card{
+    background:
+        radial-gradient(circle at top right, rgba(45,212,191,.18), transparent 40%),
+        linear-gradient(145deg, rgba(15,23,42,.96), rgba(6,78,59,.42)) !important;
+}
+
+/* Dashboard inner items */
+body.lifehub-dark .habit-item,
+body.lifehub-dark .eco-item,
+body.lifehub-dark .pulse-box,
+body.lifehub-dark .pulse-box.soft,
+body.lifehub-dark .level-box,
+body.lifehub-dark .badge-card,
+body.lifehub-dark .task-card,
+body.lifehub-dark .task-item,
+body.lifehub-dark .notification-item,
+body.lifehub-dark .search-result-item,
+body.lifehub-dark .phone-item,
+body.lifehub-dark .screen-card,
+body.lifehub-dark .quote-mini,
+body.lifehub-dark .mini-program-preview div{
+    background:rgba(2,6,23,.56) !important;
+    border-color:rgba(45,212,191,.24) !important;
+    color:#F8FAFC !important;
+}
+
+body.lifehub-dark .badge-card.locked{
+    opacity:.72;
+    filter:saturate(.8);
+}
+
+/* Inputs */
+body.lifehub-dark input,
+body.lifehub-dark textarea,
+body.lifehub-dark select{
+    background:#020617 !important;
+    border-color:rgba(45,212,191,.35) !important;
+    color:#F8FAFC !important;
+}
+
+body.lifehub-dark input::placeholder,
+body.lifehub-dark textarea::placeholder{
+    color:#64748B !important;
+}
+
+/* Buttons */
+body.lifehub-dark .secondary-btn,
+body.lifehub-dark .overview-link-btn,
+body.lifehub-dark .feature-tab,
+body.lifehub-dark .day,
+body.lifehub-dark .mode-btn,
+body.lifehub-dark .filter-btn,
+body.lifehub-dark .carousel-btn,
+body.lifehub-dark .feature-arrow{
+    background:#0F172A !important;
+    border-color:rgba(45,212,191,.35) !important;
+    color:#CFFAFE !important;
+}
+
+body.lifehub-dark .primary-btn,
+body.lifehub-dark .mode-btn.active,
+body.lifehub-dark .filter-btn.active,
+body.lifehub-dark .day.active,
+body.lifehub-dark .game-hud-shop{
+    background:#CCFBF1 !important;
+    color:#020617 !important;
+    border-color:#CCFBF1 !important;
+}
+
+body.lifehub-dark .danger-btn{
+    background:rgba(127,29,29,.75) !important;
+    color:#FECACA !important;
+}
+
+/* Progress / bars */
+body.lifehub-dark .progress-bar,
+body.lifehub-dark .xp-bar,
+body.lifehub-dark .profile-split-xp-bar,
+body.lifehub-dark .feature-line,
+body.lifehub-dark .timer-progress-ring{
+    background:rgba(148,163,184,.18) !important;
+}
+
+body.lifehub-dark .progress-bar div,
+body.lifehub-dark #taskProgress,
+body.lifehub-dark #xpBarFill,
+body.lifehub-dark #profileSplitXpFill,
+body.lifehub-dark .progress-fill,
+body.lifehub-dark .feature-line div{
+    background:#2DD4BF !important;
+}
+
+body.lifehub-dark .progress-ring,
+body.lifehub-dark .mini-ring,
+body.lifehub-dark .pomodoro-circle{
+    background:conic-gradient(#2DD4BF 75%, rgba(148,163,184,.18) 0) !important;
+}
+
+body.lifehub-dark .progress-ring span,
+body.lifehub-dark .mini-ring span,
+body.lifehub-dark .pomodoro-inner,
+body.lifehub-dark .timer-progress-text{
+    background:#020617 !important;
+    color:#F8FAFC !important;
+}
+
+/* Landing / legal sections with utility background classes */
+body.lifehub-dark .bg-slate-50,
+body.lifehub-dark .bg-white,
+body.lifehub-dark .bg-\[\#FFFFFF\],
+body.lifehub-dark .bg-\[\#FAFAF9\],
+body.lifehub-dark .bg-\[\#E0F2FE\],
+body.lifehub-dark .bg-\[\#CFFAFE\],
+body.lifehub-dark .bg-\[\#CCFBF1\]{
+    background:#020617 !important;
+}
+
+body.lifehub-dark .text-black,
+body.lifehub-dark .text-black-900,
+body.lifehub-dark .text-gray-500,
+body.lifehub-dark .text-gray-600,
+body.lifehub-dark .text-gray-700,
+body.lifehub-dark .text-gray{
+    color:#F8FAFC !important;
+}
+
+/* Nature scene dark details */
+body.lifehub-dark .cloud{
+    opacity:.22 !important;
+    filter:brightness(.72) saturate(.65);
+}
+
+body.lifehub-dark .mountain,
+body.lifehub-dark .tree::after,
+body.lifehub-dark .bush,
+body.lifehub-dark .ground{
+    filter:brightness(.62) saturate(.85);
+}
+
+/* Crescent moon: replaces the full moon look */
+body.lifehub-dark .nature-scene .sun,
+.sun.moon{
+    background:radial-gradient(circle at 68% 34%, transparent 0 27px, #E2E8F0 28px) !important;
+    box-shadow:0 0 32px rgba(226,232,240,.55) !important;
+    overflow:hidden;
+}
+
+.sun.moon::before,
+.sun.moon::after{
+    content:none !important;
+    display:none !important;
+}
+
+.sun.moon{
+    transform:rotate(-10deg);
+}
+
+.sun.moon:hover{
+    transform:translateY(-4px) scale(1.06) rotate(-10deg) !important;
+}
+
+/* Keep avatar readable in dark mode */
+body.lifehub-dark .lifehub-avatar{
+    border-color:rgba(45,212,191,.38) !important;
+}
+
+body.lifehub-dark svg{
+    color:currentColor;
+}
